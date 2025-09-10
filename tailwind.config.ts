@@ -13,6 +13,11 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        'jakarta': ['Plus Jakarta Sans', 'sans-serif'],
+        'inter': ['Inter', 'sans-serif'],
+        'opensans': ['Open Sans', 'sans-serif'],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -56,6 +61,16 @@ export default {
           "accent-foreground": "hsl(var(--sidebar-accent-foreground))",
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
+        },
+        medical: {
+          primary: "hsl(var(--medical-primary))",
+          'primary-foreground': "hsl(var(--medical-primary-foreground))",
+          secondary: "hsl(var(--medical-secondary))",
+          dark: "hsl(var(--medical-dark))",
+          'text-secondary': "hsl(var(--medical-text-secondary))",
+          'text-light': "hsl(var(--medical-text-light))",
+          footer: "hsl(var(--medical-footer))",
+          'footer-dark': "hsl(var(--medical-footer-dark))",
         },
       },
       borderRadius: {
