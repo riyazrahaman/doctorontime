@@ -1,5 +1,7 @@
 /** @import must precede all other statements */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -13,32 +15,42 @@
   */
   :root {
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --foreground: 214 26% 27%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 214 26% 27%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 214 26% 27%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 206 100% 50%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 210 58% 96%;
+    --secondary-foreground: 214 26% 27%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 210 58% 96%;
+    --muted-foreground: 0 0% 46%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 210 58% 96%;
+    --accent-foreground: 214 26% 27%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --ring: 206 100% 50%;
+
+    /* Medical theme custom colors */
+    --medical-primary: 206 100% 50%;
+    --medical-primary-foreground: 0 0% 100%;
+    --medical-secondary: 210 58% 96%;
+    --medical-dark: 206 49% 23%;
+    --medical-text-secondary: 0 0% 46%;
+    --medical-text-light: 204 21% 74%;
+    --medical-footer: 210 59% 19%;
+    --medical-footer-dark: 210 54% 23%;
 
     --radius: 0.5rem;
 
