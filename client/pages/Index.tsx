@@ -476,7 +476,8 @@ const TestimonialsSection = () => {
 
   const [active, setActive] = useState(0);
 
-  const prev = () => setActive((s) => (s - 1 + testimonials.length) % testimonials.length);
+  const prev = () =>
+    setActive((s) => (s - 1 + testimonials.length) % testimonials.length);
   const next = () => setActive((s) => (s + 1) % testimonials.length);
 
   return (
@@ -496,10 +497,16 @@ const TestimonialsSection = () => {
 
           {/* Desktop Navigation (kept for larger screens) */}
           <div className="hidden md:flex gap-4">
-            <button onClick={prev} className="w-12 h-12 bg-medical-primary rounded-full flex items-center justify-center hover:bg-medical-dark transition-colors">
+            <button
+              onClick={prev}
+              className="w-12 h-12 bg-medical-primary rounded-full flex items-center justify-center hover:bg-medical-dark transition-colors"
+            >
               <ChevronLeft className="w-6 h-6 text-white" />
             </button>
-            <button onClick={next} className="w-12 h-12 bg-medical-primary rounded-full flex items-center justify-center hover:bg-medical-dark transition-colors">
+            <button
+              onClick={next}
+              className="w-12 h-12 bg-medical-primary rounded-full flex items-center justify-center hover:bg-medical-dark transition-colors"
+            >
               <ChevronRight className="w-6 h-6 text-white" />
             </button>
           </div>
@@ -528,11 +535,19 @@ const TestimonialsSection = () => {
 
             {/* Arrows below the box */}
             <div className="flex items-center justify-center gap-4 mt-4">
-              <button onClick={prev} className="w-12 h-12 bg-medical-primary rounded-full flex items-center justify-center hover:bg-medical-dark transition-colors">
+              <button
+                onClick={prev}
+                className="w-12 h-12 bg-medical-primary rounded-full flex items-center justify-center hover:bg-medical-dark transition-colors"
+              >
                 <ChevronLeft className="w-6 h-6 text-white" />
               </button>
-              <div className="text-sm text-medical-text-secondary font-inter">{active + 1} / {testimonials.length}</div>
-              <button onClick={next} className="w-12 h-12 bg-medical-primary rounded-full flex items-center justify-center hover:bg-medical-dark transition-colors">
+              <div className="text-sm text-medical-text-secondary font-inter">
+                {active + 1} / {testimonials.length}
+              </div>
+              <button
+                onClick={next}
+                className="w-12 h-12 bg-medical-primary rounded-full flex items-center justify-center hover:bg-medical-dark transition-colors"
+              >
                 <ChevronRight className="w-6 h-6 text-white" />
               </button>
             </div>
