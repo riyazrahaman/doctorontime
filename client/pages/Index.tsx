@@ -450,27 +450,27 @@ const TestimonialsSection = () => {
   const testimonials = [
     {
       quote:
-        "Amazing team and amazing treatment from the best doctor in the world",
+        "Amazing work with zero hustle we got our appointment booked and the best part is 10% on medical bill it saved a lot for me",
       name: "Michael",
-      role: "Patient",
+      role: "User",
     },
     {
       quote:
-        "Amazing team and amazing treatment from the best doctor in the world",
-      name: "Michael",
-      role: "Patient",
+        "Amazing work with zero hustle we got our appointment booked and the best part is 10% on medical bill it saved a lot for me",
+      name: "Sarah",
+      role: "User",
     },
     {
       quote:
-        "Amazing team and amazing treatment from the best doctor in the world",
-      name: "Michael",
-      role: "Patient",
+        "Amazing work with zero hustle we got our appointment booked and the best part is 10% on medical bill it saved a lot for me",
+      name: "Daniel",
+      role: "User",
     },
     {
       quote:
-        "Amazing team and amazing treatment from the best doctor in the world",
-      name: "Michael",
-      role: "Patient",
+        "Amazing work with zero hustle we got our appointment booked and the best part is 10% on medical bill it saved a lot for me",
+      name: "Priya",
+      role: "User",
     },
   ];
 
@@ -484,8 +484,8 @@ const TestimonialsSection = () => {
               Read feedback about our Services and wonderful team!
             </h2>
             <p className="text-medical-text-secondary font-inter text-lg">
-              We take care of our patients just like a family member. Read the
-              testimonials from our patients.
+              We take care of our users just like a family member. Read the
+              testimonials from our users.
             </p>
           </div>
 
