@@ -11,8 +11,7 @@ const Header = () => {
           {/* Logo */}
           <div className="flex items-center">
             <h1 className="text-2xl font-bold font-opensans">
-              <span className="text-medical-primary">Muhiris </span>
-              <span className="text-black">Doctor</span>
+              <span className="text-medical-primary">DoctorOnTime</span>
             </h1>
           </div>
 
@@ -80,6 +79,7 @@ const HeroSection = () => {
               <p className="text-medical-text-secondary font-inter text-lg max-w-md">
                 Our doctors provide expert medical advice and consultation. Get in touch with our team to discuss.
               </p>
+              <p className="text-medical-dark font-inter font-semibold">DoctorOnTime – No Queues. Just Care. ✅</p>
               
               {/* Search Bar */}
               <div className="bg-white rounded-xl shadow-lg p-4 max-w-lg">
@@ -138,15 +138,11 @@ const AboutSection = () => {
             <div>
               <p className="text-medical-primary font-inter text-base font-semibold mb-4">About Us</p>
               <h2 className="text-medical-dark font-jakarta text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
-                World-Class Preventive,
-                Prescriptive & Curative
-                Medical Practices
+                DoctorOnTime – No Queues. Just Care. ✅
               </h2>
             </div>
             <p className="text-medical-text-secondary font-inter text-lg leading-relaxed">
-              Being in the healthcare sector, we consider it our paradigm duty
-              to ensure Safety of our patients, effectiveness of our treatments,
-              transparency in our practices, and absolute timely care.
+              DoctorOnTime is a smart healthcare booking platform that connects patients to top hospitals instantly. Our mission is simple – no waiting, no hassle, just timely access to the right doctors.
             </p>
             <button className="bg-medical-primary text-white px-8 py-4 rounded-lg font-inter text-base hover:bg-medical-dark transition-colors">
               Contact Us
@@ -158,38 +154,20 @@ const AboutSection = () => {
   );
 };
 
-const SpecialtyCard = ({ icon: Icon, title, description, isHighlighted = false }: {
+const SpecialtyCard = ({ icon: Icon, title, description }: {
   icon: any;
   title: string;
   description: string;
-  isHighlighted?: boolean;
 }) => {
   return (
-    <div className={`p-8 rounded-3xl shadow-lg transition-all hover:scale-105 ${
-      isHighlighted 
-        ? 'bg-medical-primary text-white' 
-        : 'bg-white text-gray-900'
-    }`}>
+    <div className="group p-8 rounded-3xl shadow-lg transition-all hover:scale-105 bg-white text-gray-900 hover:bg-medical-primary hover:text-white">
       <div className="text-center space-y-6">
-        {/* Icon Container */}
-        <div className={`w-28 h-28 mx-auto rounded-3xl flex items-center justify-center ${
-          isHighlighted ? 'bg-medical-secondary' : 'bg-medical-secondary'
-        }`}>
-          <Icon className={`w-12 h-12 ${isHighlighted ? 'text-medical-primary' : 'text-medical-primary'}`} />
+        <div className="w-28 h-28 mx-auto rounded-3xl flex items-center justify-center bg-medical-secondary">
+          <Icon className="w-12 h-12 text-medical-primary group-hover:text-white" />
         </div>
-        
-        {/* Content */}
         <div className="space-y-4">
-          <h3 className={`text-2xl font-bold font-jakarta ${
-            isHighlighted ? 'text-white' : 'text-gray-900'
-          }`}>
-            {title}
-          </h3>
-          <p className={`text-lg font-inter leading-relaxed ${
-            isHighlighted ? 'text-white' : 'text-medical-text-secondary'
-          }`}>
-            {description}
-          </p>
+          <h3 className="text-2xl font-bold font-jakarta group-hover:text-white">{title}</h3>
+          <p className="text-lg font-inter leading-relaxed text-medical-text-secondary group-hover:text-white">{description}</p>
         </div>
       </div>
     </div>
@@ -206,8 +184,7 @@ const SpecialtySection = () => {
     {
       icon: Syringe,
       title: "General Diagnosis",
-      description: "Get consultation form our General Diagnosis team",
-      isHighlighted: true
+      description: "Get consultation form our General Diagnosis team"
     },
     {
       icon: Brain,
@@ -319,14 +296,13 @@ const ValuesSection = () => {
                 Our Stellar Values
               </h2>
             </div>
-            <p className="text-medical-text-secondary font-inter text-lg leading-relaxed">
-              The cornerstone of our establishment is 'Making the
-              benefits of exceptional medical services reach the people
-              without Discrimination.' We strive to live up to this
-              philosophy through our stellar values, that are the pillars
-              of every service that we offer under the banner of our
-              prestigious hospital.
-            </p>
+            <div className="space-y-3 text-medical-text-secondary font-inter text-lg leading-relaxed">
+              <p>⏱ Timeliness – We value your time. No waiting rooms, no delays, just faster access to care.</p>
+              <p>🤝 Trust – Health is personal, and we build every connection with honesty and reliability.</p>
+              <p>💡 Innovation – We harness AI and technology to make healthcare smarter and simpler.</p>
+              <p>💙 Patient-First Care – Every decision we make starts with what’s best for the patient.</p>
+              <p>🌍 Accessibility – Quality healthcare should be available to everyone, everywhere.</p>
+            </div>
             <button className="bg-medical-primary text-white px-8 py-4 rounded-lg font-inter text-base hover:bg-medical-dark transition-colors">
               Contact Us
             </button>
@@ -449,7 +425,7 @@ const Footer = () => {
             {/* Company Info */}
             <div className="space-y-6">
               <div className="space-y-2">
-                <h3 className="text-2xl font-bold font-jakarta">MuhirisDoctor</h3>
+                <h3 className="text-2xl font-bold font-jakarta">DoctorOnTime</h3>
                 <p className="text-medical-text-light font-inter text-sm leading-relaxed">
                   The ultimate destination for
                   all of your medical needs
