@@ -170,7 +170,9 @@ const HeroSection = () => {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-3/4 h-16 bg-medical-secondary rounded-full shadow-xl opacity-50"></div>
+              <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-3/4 h-16 bg-white/30 backdrop-blur-md rounded-full shadow-xl flex items-center justify-center">
+                <p className="font-jakarta font-bold text-medical-dark text-center text-lg">Faster Appointments, Better Care.</p>
+              </div>
             </div>
           </div>
         </div>
