@@ -370,27 +370,27 @@ const ValuesSection = () => {
                 Our Stellar Values
               </h2>
             </div>
-            <div className="space-y-3 text-medical-text-secondary font-inter text-lg leading-relaxed">
-              <p>
-                ⏱ Timeliness – We value your time. No waiting rooms, no delays,
-                just faster access to care.
-              </p>
-              <p>
-                🤝 Trust – Health is personal, and we build every connection
-                with honesty and reliability.
-              </p>
-              <p>
-                💡 Innovation – We harness AI and technology to make healthcare
-                smarter and simpler.
-              </p>
-              <p>
-                💙 Patient-First Care – Every decision we make starts with
-                what’s best for the patient.
-              </p>
-              <p>
-                🌍 Accessibility – Quality healthcare should be available to
-                everyone, everywhere.
-              </p>
+            <div className="space-y-6 text-medical-text-secondary font-inter text-lg leading-relaxed">
+              <div>
+                <h4 className="font-jakarta font-bold text-medical-dark text-lg">Timeliness</h4>
+                <p className="mt-2">We value your time. No waiting rooms, no delays, just faster access to care.</p>
+              </div>
+              <div>
+                <h4 className="font-jakarta font-bold text-medical-dark text-lg">Trust</h4>
+                <p className="mt-2">Health is personal, and we build every connection with honesty and reliability.</p>
+              </div>
+              <div>
+                <h4 className="font-jakarta font-bold text-medical-dark text-lg">Innovation</h4>
+                <p className="mt-2">We harness AI and technology to make healthcare smarter and simpler.</p>
+              </div>
+              <div>
+                <h4 className="font-jakarta font-bold text-medical-dark text-lg">Patient-First Care</h4>
+                <p className="mt-2">Every decision we make starts with what’s best for the patient.</p>
+              </div>
+              <div>
+                <h4 className="font-jakarta font-bold text-medical-dark text-lg">Accessibility</h4>
+                <p className="mt-2">Quality healthcare should be available to everyone, everywhere.</p>
+              </div>
             </div>
             <button className="bg-medical-primary text-white px-8 py-4 rounded-lg font-inter text-base hover:bg-medical-dark transition-colors">
               Contact Us
