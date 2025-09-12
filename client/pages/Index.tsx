@@ -235,7 +235,7 @@ const SpecialtyCard = ({
     <div className="group p-8 rounded-3xl shadow-lg transition-all hover:scale-105 bg-white text-gray-900 hover:bg-medical-primary hover:text-white">
       <div className="text-center space-y-6">
         <div className="w-28 h-28 mx-auto rounded-3xl flex items-center justify-center bg-medical-secondary">
-          <Icon className="w-12 h-12 text-medical-primary group-hover:text-white" />
+          <Icon className="w-12 h-12 text-medical-primary group-hover:text-black" />
         </div>
         <div className="space-y-4">
           <h3 className="text-2xl font-bold font-jakarta group-hover:text-white">
